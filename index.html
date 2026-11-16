@@ -4,7 +4,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"Eagar 2 Work","description":"Remote IT services and IT staff augmentation for US companies: remote developers, DevOps, QA, data engineers, help desk, cloud and security.","telephone":"+1 213 786 1340","founder":{"@type":"Person","name":"Hemang Ponda"},"address":{"@type":"PostalAddress","streetAddress":"800 W 6th St, Suite 1200","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90017","addressCountry":"US"},"areaServed":"United States","openingHours":"Mo-Fr 08:00-18:00","knowsAbout":["IT staff augmentation","Remote developers","Dedicated development teams","Cloud and DevOps","QA test automation","Remote IT help desk","Cybersecurity monitoring","Data engineering"]}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Eagar 2 Work","description":"Remote IT services and IT staff augmentation for US companies: remote developers, DevOps, QA, data engineers, help desk, cloud and security.","telephone":"+1 (213) 786-1340","founder":{"@type":"Person","name":"Hemang Ponda"},"address":{"@type":"PostalAddress","streetAddress":"Stanza","addressLocality":"Ahmedabad","addressRegion":"Gujarat","addressCountry":"IN"},"areaServed":"United States","openingHours":"Mo-Fr 08:00-18:00","knowsAbout":["IT staff augmentation","Remote developers","Dedicated development teams","Cloud and DevOps","QA test automation","Remote IT help desk","Cybersecurity monitoring","Data engineering"]}
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2720%27 fill=%27%2308171D%27/%3E%3Cpath d=%27M20 18H84L72 30H20ZM20 70H72L84 82H20Z%27 fill=%27%23EEF3F1%27/%3E%3Crect x=%2720%27 y=%2718%27 width=%2712%27 height=%2764%27 fill=%27%23EEF3F1%27/%3E%3Cpolyline points=%2732,50 44,50 51,37 59,63 65,50 74,50%27 fill=%27none%27 stroke=%27%23F0A830%27 stroke-width=%278%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
 <meta name="theme-color" content="#08171D">
@@ -274,7 +274,7 @@ footer{border-top:1px solid var(--line);padding-block:36px 44px}
     <nav class="links" aria-label="Main">
       <a href="#services">IT services</a><a href="#augmentation">Hire developers</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-gold" href="tel:+12137861340">Call <small>+1 213 786 1340</small></a>
+    <a class="btn btn-gold" href="tel:+12137861340">Call <small>+1 (213) 786-1340</small></a>
   </div>
 </header>
 
@@ -447,10 +447,10 @@ footer{border-top:1px solid var(--line);padding-block:36px 44px}
         <div class="info">
           <div class="line-card">
             <span class="k">Call Hemang Ponda, owner</span>
-            <span class="phone" id="phone">+1 213 786 1340</span>
+            <span class="phone" id="phone">+1 (213) 786-1340</span>
             <div class="row"><button class="mini" type="button" id="copyPhone">Copy number</button><a class="mini" href="tel:+12137861340">Call</a></div>
           </div>
-          <div class="line-card"><span class="k">Office</span><span class="v">800 W 6th St, Suite 1200<br>Los Angeles, CA 90017, United States</span></div>
+          <div class="line-card"><span class="k">Office</span><span class="v">Stanza, Ahmedabad, India</span></div>
           <div class="line-card"><span class="k">Hours</span><span class="v">Monday to Friday, 8 AM to 6 PM Pacific<br>Support coverage across all US time zones</span></div>
         </div>
         <form id="form" novalidate>
@@ -474,7 +474,7 @@ footer{border-top:1px solid var(--line);padding-block:36px 44px}
   <div class="wrap foot">
     <a class="brand" href="#top"><svg><use href="#mark"/></svg><b>Eagar<span><em>2</em> work</span></b></a>
     <nav aria-label="Footer"><a href="#services">Remote IT services</a><a href="#augmentation">IT staff augmentation</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
-    <span>© 2026 Eagar 2 Work · Los Angeles, California</span>
+    <span>© 2026 Eagar 2 Work · Ahmedabad, India</span>
   </div>
 </footer>
 
@@ -670,14 +670,14 @@ const copyBtn=document.getElementById('copyPhone');
 copyBtn.addEventListener('click',()=>{
   const ok=()=>{copyBtn.textContent='Copied';setTimeout(()=>copyBtn.textContent='Copy number',1600)};
   const fail=()=>{const r=document.createRange(); r.selectNodeContents(document.getElementById('phone')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); copyBtn.textContent='Selected, press copy';};
-  try{navigator.clipboard.writeText('+1 213 786 1340').then(ok,fail)}catch(e){fail()}
+  try{navigator.clipboard.writeText('+1 (213) 786-1340').then(ok,fail)}catch(e){fail()}
 });
 document.getElementById('form').addEventListener('submit',e=>{
   e.preventDefault();
   const st=document.getElementById('status'), n=document.getElementById('f-name'), m=document.getElementById('f-email');
   if(!n.value.trim()){ st.textContent='Please add your name so we know who to reply to.'; n.focus(); return; }
   if(!/^\S+@\S+\.\S+$/.test(m.value)){ st.textContent='That email address looks incomplete. Please check it.'; m.focus(); return; }
-  st.textContent='Preview only: this form isn\'t connected to an inbox yet, so nothing was sent. Please call +1 213 786 1340.';
+  st.textContent='Preview only: this form isn\'t connected to an inbox yet, so nothing was sent. Please call +1 (213) 786-1340.';
 });
 })();
 </script>
