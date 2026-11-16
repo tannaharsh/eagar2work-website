@@ -1,0 +1,685 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Eagar 2 Work</title>
+<meta name="description" content="Eagar 2 Work provides remote IT services and IT staff augmentation for US companies. Hire vetted remote developers, DevOps, QA and data engineers who work your hours, or hand us your help desk, cloud and security work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Eagar 2 Work","description":"Remote IT services and IT staff augmentation for US companies: remote developers, DevOps, QA, data engineers, help desk, cloud and security.","telephone":"+1 213 786 1340","founder":{"@type":"Person","name":"Hemang Ponda"},"address":{"@type":"PostalAddress","streetAddress":"800 W 6th St, Suite 1200","addressLocality":"Los Angeles","addressRegion":"CA","postalCode":"90017","addressCountry":"US"},"areaServed":"United States","openingHours":"Mo-Fr 08:00-18:00","knowsAbout":["IT staff augmentation","Remote developers","Dedicated development teams","Cloud and DevOps","QA test automation","Remote IT help desk","Cybersecurity monitoring","Data engineering"]}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2720%27 fill=%27%2308171D%27/%3E%3Cpath d=%27M20 18H84L72 30H20ZM20 70H72L84 82H20Z%27 fill=%27%23EEF3F1%27/%3E%3Crect x=%2720%27 y=%2718%27 width=%2712%27 height=%2764%27 fill=%27%23EEF3F1%27/%3E%3Cpolyline points=%2732,50 44,50 51,37 59,63 65,50 74,50%27 fill=%27none%27 stroke=%27%23F0A830%27 stroke-width=%278%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E">
+<meta name="theme-color" content="#08171D">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Eagar 2 Work | Remote IT services and staff augmentation">
+<meta property="og:description" content="Hire vetted remote developers, DevOps, QA and data engineers who work US hours, or hand us your help desk, cloud and security work.">
+</head><body>
+<style>
+/* Layout: night-sky dark page. Hero = WebGL point cloud that morphs between the logo, a globe of remote teams and a cloud cube. 3D role carousel for staff augmentation, flip cards for engagement models, tilt cards for services, rotating promise cube. */
+:root{
+  --night:#08171D; --ink:#102A35; --ink-2:#163844; --mist:#EEF3F1; --slate:#8FA3A9;
+  --gold:#F0A830; --teal:#1FB5A8; --line:rgba(238,243,241,.12); --line-2:rgba(238,243,241,.22);
+  --display:"Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --body:"Instrument Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--night);color:var(--mist);font-family:var(--body);font-size:17px;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--night)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:.92;margin:0;letter-spacing:.005em;text-wrap:balance}
+h2{font-size:clamp(2.3rem,5.2vw,4.2rem);font-weight:800}
+h3{font-size:1.55rem;font-weight:700;letter-spacing:.02em}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(31,181,168,.18);flex:none}
+.lede{color:var(--slate);font-size:1.12rem;max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 1rem var(--body);padding:14px 22px;border-radius:999px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s, background .2s, border-color .2s}
+.btn-gold{background:var(--gold);color:var(--night)}
+.btn-gold:hover{transform:translateY(-2px);background:#F5B94F}
+.btn-ghost{border-color:var(--line-2);color:var(--mist);background:transparent}
+.btn-ghost:hover{border-color:var(--mist)}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(8,23,29,.84);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand b{font-family:var(--display);font-weight:800;font-size:1.35rem;text-transform:uppercase;line-height:.85;letter-spacing:.02em}
+.brand b span{display:block;font-weight:500;font-size:.58em;letter-spacing:.3em;color:var(--slate)}
+.brand b span em{font-style:normal;color:var(--gold);font-weight:800}
+.links{display:flex;gap:26px;font-size:.95rem}
+.links a{text-decoration:none;color:var(--slate);transition:color .2s}
+.links a:hover{color:var(--mist)}
+.nav .btn{padding:10px 16px;font-size:.9rem}
+.nav .btn small{font-family:var(--mono);font-size:.8rem}
+
+/* Hero */
+.hero{position:relative;padding-block:56px 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 70% at 70% 45%,#000 10%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 70% at 70% 45%,#000 10%,transparent 75%);opacity:.55;pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero-copy{display:grid;gap:26px;min-width:0}
+.hero h1{font-size:clamp(3rem,7.2vw,6.2rem);font-weight:900}
+.hero h1 em{font-style:normal;color:var(--gold);display:inline-block;text-shadow:0 1px 0 #c98a1e,0 2px 0 #b97a12,0 3px 0 #a86c0c,0 4px 0 #965f08,0 10px 18px rgba(0,0,0,.5)}
+.hero h1 .stroke{color:transparent;-webkit-text-stroke:1.5px var(--mist)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.trust{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:.78rem;color:var(--slate);letter-spacing:.04em}
+.trust span::before{content:"✓ ";color:var(--teal)}
+.stage{position:relative;width:100%;max-width:560px;justify-self:end;display:grid;gap:14px}
+.flock-box{position:relative;aspect-ratio:1/1;max-width:100%;border-radius:28px;background:radial-gradient(circle at 50% 48%,rgba(31,181,168,.14),transparent 60%),var(--ink);border:1px solid var(--line);overflow:hidden;touch-action:pan-y}
+#flock{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:crosshair}
+.flock-box .fallback{display:none;position:absolute;inset:22%;width:56%;height:56%}
+.flock-box.nogl .fallback{display:block}
+.hud{position:absolute;left:16px;right:16px;top:14px;display:flex;justify-content:space-between;gap:10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);pointer-events:none}
+.hud b{color:var(--gold);font-weight:500}
+.forms{display:flex;gap:8px;flex-wrap:wrap}
+.forms button{font:500 .78rem var(--mono);letter-spacing:.06em;text-transform:uppercase;background:transparent;color:var(--slate);border:1px solid var(--line-2);border-radius:999px;padding:8px 14px;cursor:pointer;transition:all .2s}
+.forms button[aria-pressed="true"]{background:var(--mist);color:var(--night);border-color:var(--mist)}
+.forms button:hover{color:var(--mist);border-color:var(--mist)}
+.forms button[aria-pressed="true"]:hover{color:var(--night)}
+.hint{font-family:var(--mono);font-size:.72rem;color:var(--slate)}
+
+/* Signal band */
+.signal{position:relative;border-block:1px solid var(--line);background:linear-gradient(90deg,var(--night),var(--ink) 50%,var(--night))}
+.signal canvas{display:block;width:100%;height:84px}
+.signal .read{position:absolute;top:10px;left:max(16px, env(safe-area-inset-left,0px));font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);display:flex;gap:8px;align-items:center}
+.signal .read i{width:8px;height:8px;border-radius:50%;background:var(--teal);display:inline-block;transition:background .2s}
+.signal .read.busy i{background:var(--gold)}
+.signal .tag{position:absolute;right:max(16px, env(safe-area-inset-right,0px));bottom:10px;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;color:var(--slate);text-transform:uppercase}
+
+/* Sections */
+section{padding-block:96px}
+.alt{background:var(--ink);border-block:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:end;margin-bottom:44px}
+.sec-head > *{min-width:0}
+.sec-head .t{display:grid;gap:18px}
+[data-tilt]{transform-origin:50% 0;will-change:transform}
+
+/* Services: tilt cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;perspective:1400px}
+.card{position:relative;background:linear-gradient(160deg,var(--ink-2),var(--ink) 60%);border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:14px;align-content:start;transform-style:preserve-3d;transition:transform .5s cubic-bezier(.2,.8,.2,1), border-color .3s;--gx:50%;--gy:0%}
+.card::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(circle at var(--gx) var(--gy),rgba(238,243,241,.10),transparent 45%);pointer-events:none;opacity:0;transition:opacity .3s}
+.card:hover{border-color:var(--line-2)}
+.card:hover::after{opacity:1}
+.card .ic{width:50px;height:50px;border-radius:14px;background:var(--night);border:1px solid var(--line-2);display:grid;place-items:center;color:var(--gold);transform:translateZ(40px)}
+.card .ic svg{width:26px;height:26px}
+.card h3{transform:translateZ(28px)}
+.card p{color:var(--slate);font-size:.98rem;transform:translateZ(14px)}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;transform:translateZ(20px)}
+.tags i{font:500 .72rem var(--mono);font-style:normal;color:var(--teal);border:1px solid rgba(31,181,168,.35);border-radius:999px;padding:3px 9px}
+
+/* Role carousel */
+.aug{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:center}
+.aug > *{min-width:0}
+.ring-stage{position:relative;height:420px;perspective:1300px;overflow:hidden;touch-action:pan-y;cursor:grab;mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+.ring-stage:active{cursor:grabbing}
+.ring{position:absolute;left:50%;top:50%;width:0;height:0;transform-style:preserve-3d}
+.role{position:absolute;left:-105px;top:-140px;width:210px;height:280px;border-radius:22px;padding:22px;display:grid;align-content:space-between;text-align:left;font:inherit;color:var(--mist);background:linear-gradient(170deg,var(--ink-2),var(--ink));border:1px solid var(--line-2);cursor:pointer;backface-visibility:visible}
+.role.front{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),0 30px 60px rgba(0,0,0,.45)}
+.role .k{font:500 .7rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.role h3{font-size:1.9rem}
+.role .tags{display:flex;flex-wrap:wrap;gap:5px}
+.role .glyph{width:44px;height:44px;border-radius:12px;background:var(--night);display:grid;place-items:center;font:500 .9rem var(--mono);color:var(--gold);border:1px solid var(--line-2)}
+.ring-ctl{display:flex;gap:10px;justify-content:center;margin-top:10px}
+.ring-ctl button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);background:var(--ink);color:var(--mist);font:500 1.1rem var(--mono);cursor:pointer}
+.ring-ctl button:hover{border-color:var(--gold);color:var(--gold)}
+.detail{background:var(--ink);border:1px solid var(--line-2);border-radius:24px;padding:28px;display:grid;gap:14px}
+.detail h3{font-size:2.3rem;color:var(--gold)}
+.detail p{color:var(--slate)}
+.detail ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.detail .k{font:500 .72rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+
+/* Flip cards */
+.flips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:72px}
+.flip{perspective:1100px;cursor:pointer;border-radius:22px}
+.flip-in{display:grid;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.3,.7,.2,1);height:100%}
+.flip.on .flip-in{transform:rotateY(180deg)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:22px;padding:24px;display:grid;gap:12px;align-content:start;border:1px solid var(--line-2)}
+.face.front{background:linear-gradient(165deg,var(--ink-2),var(--ink))}
+.face.back{background:var(--mist);color:var(--night);transform:rotateY(180deg);border-color:var(--mist)}
+.face .big{font-family:var(--display);font-weight:900;font-size:3.4rem;line-height:.9;color:var(--gold)}
+.face p{color:var(--slate);font-size:.95rem}
+.face.back p,.face.back li{color:#29434d;font-size:.95rem}
+.face.back ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.face .flip-hint{font:500 .7rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-top:auto}
+.face.back .flip-hint{color:#0f6f67}
+
+/* Process */
+.steps{position:relative}
+.steps::before{content:"";position:absolute;left:10px;right:10px;top:21px;height:2px;background:repeating-linear-gradient(90deg,var(--line-2) 0 8px,transparent 8px 14px)}
+.steps .runner{position:absolute;top:15px;left:0;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 6px rgba(240,168,48,.18),0 0 24px var(--gold);animation:run 7s cubic-bezier(.6,0,.4,1) infinite;z-index:2}
+@keyframes run{0%{left:0}100%{left:calc(100% - 14px)}}
+.steps-list{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;list-style:none;margin:0;padding:0}
+.steps li{position:relative;display:grid;gap:12px;align-content:start;min-width:0}
+.steps .num{width:44px;height:44px;border-radius:50%;background:var(--night);border:2px solid var(--teal);display:grid;place-items:center;font:500 .9rem var(--mono);color:var(--teal);position:relative;z-index:1}
+.steps p{color:var(--slate);font-size:.95rem}
+
+/* Promise cube */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.about > *{min-width:0}
+.cube-stage{height:380px;display:grid;place-items:center;perspective:1000px}
+.cube{position:relative;width:220px;height:220px;transform-style:preserve-3d;animation:spin 18s linear infinite}
+.cube-stage:hover .cube{animation-play-state:paused}
+@keyframes spin{0%{transform:rotateX(-18deg) rotateY(0)}50%{transform:rotateX(18deg) rotateY(180deg)}100%{transform:rotateX(-18deg) rotateY(360deg)}}
+.side{position:absolute;inset:0;border-radius:18px;padding:22px;display:grid;align-content:end;gap:6px;background:linear-gradient(160deg,rgba(22,56,68,.96),rgba(16,42,53,.96));border:1px solid var(--line-2)}
+.side b{font-family:var(--display);font-size:1.7rem;text-transform:uppercase;line-height:.95}
+.side span{font-size:.85rem;color:var(--slate)}
+.side i{position:absolute;top:18px;left:22px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px var(--gold)}
+.side:nth-child(1){transform:translateZ(110px)}
+.side:nth-child(2){transform:rotateY(90deg) translateZ(110px)}
+.side:nth-child(3){transform:rotateY(180deg) translateZ(110px)}
+.side:nth-child(4){transform:rotateY(-90deg) translateZ(110px)}
+.side:nth-child(5){transform:rotateX(90deg) translateZ(110px);background:var(--gold);border-color:var(--gold)}
+.side:nth-child(6){transform:rotateX(-90deg) translateZ(110px);background:var(--teal);border-color:var(--teal)}
+.about-copy{display:grid;gap:18px}
+.about-copy p{color:var(--slate);max-width:60ch}
+.about-copy p strong{color:var(--mist);font-weight:600}
+.owner{display:flex;gap:16px;align-items:center;background:var(--night);border:1px solid var(--line-2);border-radius:18px;padding:16px 18px;margin-top:6px}
+.owner .avatar{width:56px;height:56px;border-radius:16px;background:var(--gold);color:var(--night);display:grid;place-items:center;font:800 1.5rem var(--display);flex:none}
+.owner b{display:block;font-size:1.05rem}
+.owner span{color:var(--slate);font-size:.9rem}
+
+/* FAQ */
+.faq{display:grid;gap:10px;max-width:880px}
+.faq details{background:var(--ink);border:1px solid var(--line);border-radius:16px;padding:0 22px;transition:border-color .25s}
+.faq details[open]{border-color:var(--line-2)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 0;font-weight:600;font-size:1.06rem;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:500 1.4rem var(--mono);color:var(--gold);transition:transform .3s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--slate);padding-bottom:20px;max-width:70ch}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:28px}
+.contact > *{min-width:0}
+.info{display:grid;gap:18px;align-content:start}
+.line-card{background:var(--night);border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:6px}
+.line-card .k{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+.line-card .v{font-size:1.1rem;font-weight:600}
+.phone{font-family:var(--display);font-size:clamp(2.2rem,5vw,3.2rem);font-weight:800;color:var(--gold);letter-spacing:.02em;user-select:all;line-height:1}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:8px}
+.mini{font:500 .82rem var(--mono);background:transparent;color:var(--mist);border:1px solid var(--line-2);border-radius:999px;padding:8px 14px;cursor:pointer;text-decoration:none}
+.mini:hover{border-color:var(--mist)}
+form{background:var(--night);border:1px solid var(--line);border-radius:24px;padding:28px;display:grid;gap:16px;grid-template-columns:1fr 1fr}
+form .full{grid-column:1 / -1}
+label{display:grid;gap:6px;font-size:.88rem;color:var(--slate);min-width:0}
+input,select,textarea{font:inherit;font-size:1rem;color:var(--mist);background:var(--ink);border:1px solid var(--line-2);border-radius:12px;padding:12px 14px;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(31,181,168,.2)}
+textarea{min-height:120px;resize:vertical}
+.status{grid-column:1 / -1;font-size:.92rem;color:var(--teal);min-height:1.2em}
+
+footer{border-top:1px solid var(--line);padding-block:36px 44px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;align-items:center;color:var(--slate);font-size:.9rem}
+.foot nav{display:flex;flex-wrap:wrap;gap:18px}
+.foot a{text-decoration:none}.foot a:hover{color:var(--mist)}
+
+@media (max-width:1060px){ .flips{grid-template-columns:1fr 1fr} }
+@media (max-width:980px){
+  .links{display:none}
+  .hero-grid,.about,.contact,.aug{grid-template-columns:1fr}
+  .stage{justify-self:stretch;max-width:540px}
+  .sec-head{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .steps-list{grid-template-columns:1fr;gap:26px}
+  .steps::before{left:21px;right:auto;top:10px;bottom:10px;width:2px;height:auto;background:repeating-linear-gradient(180deg,var(--line-2) 0 8px,transparent 8px 14px)}
+  .steps li{grid-template-columns:44px 1fr;column-gap:18px}
+  .steps li > :not(.num){grid-column:2}
+  .steps .num{grid-row:1 / span 2}
+  .steps .runner{left:15px;top:0;animation-name:runV}
+  @keyframes runV{0%{top:0}100%{top:calc(100% - 14px)}}
+  .cube-stage{height:320px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding-block:72px}
+  .cards,.flips{grid-template-columns:1fr}
+  form{grid-template-columns:1fr;padding:22px}
+  .nav .btn small{display:none}
+  .ring-stage{height:360px}
+  .role{left:-85px;top:-120px;width:170px;height:240px;padding:18px}
+  .role h3{font-size:1.55rem}
+  .cube{width:180px;height:180px}
+  .side:nth-child(1){transform:translateZ(90px)}
+  .side:nth-child(2){transform:rotateY(90deg) translateZ(90px)}
+  .side:nth-child(3){transform:rotateY(180deg) translateZ(90px)}
+  .side:nth-child(4){transform:rotateY(-90deg) translateZ(90px)}
+  .side:nth-child(5){transform:rotateX(90deg) translateZ(90px)}
+  .side:nth-child(6){transform:rotateX(-90deg) translateZ(90px)}
+  .side b{font-size:1.4rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .cube{transform:rotateX(-18deg) rotateY(-28deg)}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 100 100">
+      <path d="M20 18 H84 L72 30 H20 Z" fill="#EEF3F1"/>
+      <path d="M20 70 H72 L84 82 H20 Z" fill="#EEF3F1"/>
+      <rect x="20" y="18" width="12" height="64" fill="#EEF3F1"/>
+      <polyline points="32,50 44,50 51,37 59,63 65,50 74,50" fill="none" stroke="#F0A830" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="83" cy="50" r="5.5" fill="#1FB5A8"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Eagar 2 Work home"><svg><use href="#mark"/></svg><b>Eagar<span><em>2</em> work</span></b></a>
+    <nav class="links" aria-label="Main">
+      <a href="#services">IT services</a><a href="#augmentation">Hire developers</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-gold" href="tel:+12137861340">Call <small>+1 213 786 1340</small></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Remote IT services &amp; staff augmentation</span>
+        <h1>Your tech team, <span class="stroke">bigger</span> by <em>Monday.</em></h1>
+        <p class="lede">Eagar 2 Work helps US companies get more done without a six month hiring process. Add vetted remote developers, DevOps and QA engineers who work your hours, or hand us your help desk, cloud and security work so your own people can stay on the product.</p>
+        <div class="ctas">
+          <a class="btn btn-gold" href="#augmentation">Hire remote developers</a>
+          <a class="btn btn-ghost" href="#services">See IT services</a>
+        </div>
+        <div class="trust"><span>Vetted engineers</span><span>US time zone overlap</span><span>Month to month</span></div>
+      </div>
+      <div class="stage">
+        <div class="flock-box" id="box">
+          <canvas id="flock" aria-label="Animated particles forming the Eagar 2 Work logo, a code symbol and a server rack"></canvas>
+          <svg class="fallback" aria-hidden="true"><use href="#mark"/></svg>
+          <div class="hud"><span>Signal <b id="hudName">Eagar 2 Work</b></span><span id="hudPct">LOCK 100%</span></div>
+        </div>
+        <div class="forms" role="group" aria-label="Choose a shape">
+          <button type="button" data-f="0" aria-pressed="true">Eagar 2 Work</button>
+          <button type="button" data-f="1" aria-pressed="false">Dev</button>
+          <button type="button" data-f="2" aria-pressed="false">IT</button>
+          <button type="button" data-f="scatter" aria-pressed="false">Scatter</button>
+        </div>
+        <span class="hint">Move your cursor or finger through the flock.</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="signal" aria-hidden="true"><canvas></canvas><span class="read"><i></i><b>Status · All systems up</b></span><span class="tag">Scroll to ship a build</span></div>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">Remote IT services</span><h2>The IT work you need done, handled remotely</h2></div>
+        <p class="lede">Some work doesn't need a full time hire. It needs someone who knows it well and shows up every week. These are the services US companies ask us for most.</p>
+      </div>
+      <div class="cards" data-tilt>
+        <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg></span><h3>Remote help desk</h3><p>Your staff call, email or message us when a laptop, login or app acts up. We fix it remotely, log it and spot the problems that keep coming back.</p><span class="tags"><i>Microsoft 365</i><i>Google Workspace</i><i>Intune</i></span></article>
+        <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.5-9A6 6 0 0 1 18 8a4 4 0 0 1-.5 10Z"/></svg></span><h3>Cloud &amp; DevOps</h3><p>Moves to AWS or Azure, build and release pipelines, containers and cost cleanup. Your deploys get boring, which is exactly what you want.</p><span class="tags"><i>AWS</i><i>Azure</i><i>Kubernetes</i><i>Terraform</i></span></article>
+        <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4"/><path d="m16 8 4 4-4 4"/><path d="m13 5-2 14"/></svg></span><h3>Web &amp; mobile apps</h3><p>Customer portals, internal tools, iOS and Android apps. We build from your designs or help you shape the idea first, then keep it running after launch.</p><span class="tags"><i>React</i><i>Node.js</i><i>Flutter</i></span></article>
+        <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8 8 9 4.6-1 8-4.5 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Security monitoring</h3><p>Around the clock alerts on your servers and laptops, patching on a schedule, backups we actually test and two step sign in on every account.</p><span class="tags"><i>SOC 2 prep</i><i>EDR</i><i>Backups</i></span></article>
+        <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg></span><h3>QA &amp; test automation</h3><p>Manual testers for every release and automated test suites that catch broken checkouts and logins before your customers do.</p><span class="tags"><i>Playwright</i><i>Cypress</i><i>Appium</i></span></article>
+        <article class="card"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3>Data &amp; AI</h3><p>Clean data pipelines, Power BI and Looker dashboards people actually open, and practical AI features like search and support assistants built on your own data.</p><span class="tags"><i>Snowflake</i><i>Power BI</i><i>Python</i></span></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="augmentation" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">IT staff augmentation</span><h2>Hire remote developers who join your team, not ours</h2></div>
+        <p class="lede">You pick the people, they join your Slack, your standups and your sprint board. We handle recruiting, payroll, laptops and replacements. Spin the wheel to see the roles we fill most often.</p>
+      </div>
+      <div class="aug">
+        <div>
+          <div class="ring-stage" id="ringStage"><div class="ring" id="ring"></div></div>
+          <div class="ring-ctl"><button type="button" id="prev" aria-label="Previous role">←</button><button type="button" id="next" aria-label="Next role">→</button></div>
+        </div>
+        <div class="detail">
+          <span class="k">Role in front</span>
+          <h3 id="rName">React developer</h3>
+          <p id="rText"></p>
+          <span class="k">Usually works on</span>
+          <ul id="rList"></ul>
+          <a class="btn btn-gold" href="#contact" style="justify-self:start">Request profiles</a>
+        </div>
+      </div>
+
+      <div class="flips" id="models">
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <div class="flip-in">
+            <div class="face front"><span class="eyebrow">Most popular</span><span class="big">1:1</span><h3>Dedicated developer</h3><p>One engineer, full time on your project, working your hours.</p><span class="flip-hint">Tap to flip</span></div>
+            <div class="face back"><h3>How it works</h3><ul><li>40 hours a week, only on your work</li><li>You manage tasks day to day</li><li>Flat monthly rate</li><li>Free replacement if it isn't a fit</li></ul><span class="flip-hint">Tap to flip back</span></div>
+          </div>
+        </div>
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <div class="flip-in">
+            <div class="face front"><span class="eyebrow">For bigger builds</span><span class="big">3+</span><h3>Dedicated team</h3><p>A small pod with a lead, developers and QA that owns a whole product area.</p><span class="flip-hint">Tap to flip</span></div>
+            <div class="face back"><h3>How it works</h3><ul><li>Tech lead runs the day to day</li><li>Weekly demo and progress report</li><li>Add or remove people as you grow</li><li>One invoice for the whole team</li></ul><span class="flip-hint">Tap to flip back</span></div>
+          </div>
+        </div>
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <div class="flip-in">
+            <div class="face front"><span class="eyebrow">For steady upkeep</span><span class="big">hrs</span><h3>Part time &amp; hourly</h3><p>A block of hours each month for maintenance, fixes and small features.</p><span class="flip-hint">Tap to flip</span></div>
+            <div class="face back"><h3>How it works</h3><ul><li>Buy hours monthly, use them as needed</li><li>Same engineer every time</li><li>Good for WordPress, Shopify and legacy apps</li><li>Unused hours roll over once</li></ul><span class="flip-hint">Tap to flip back</span></div>
+          </div>
+        </div>
+        <div class="flip" role="button" tabindex="0" aria-pressed="false">
+          <div class="flip-in">
+            <div class="face front"><span class="eyebrow">For a clear goal</span><span class="big">fix</span><h3>Fixed scope project</h3><p>You tell us what done looks like. We agree on a price and a date.</p><span class="flip-hint">Tap to flip</span></div>
+            <div class="face back"><h3>How it works</h3><ul><li>Written scope before any work starts</li><li>Paid by milestone, not by the hour</li><li>Demo at every milestone</li><li>30 days of fixes after launch</li></ul><span class="flip-hint">Tap to flip back</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">How it works</span><h2>From one call to a new teammate</h2></div>
+        <p class="lede">No long sales cycle. This is the same path whether you need one developer for six months or a team of five for two years.</p>
+      </div>
+      <div class="steps" data-tilt><span class="runner" aria-hidden="true"></span>
+      <ol class="steps-list">
+        <li><span class="num">01</span><h3>Tell us the role</h3><p>A 20 minute call about the skills, the seniority, your stack and the hours you need covered.</p></li>
+        <li><span class="num">02</span><h3>Meet profiles</h3><p>We send a short list of engineers we've already screened for skills and spoken English.</p></li>
+        <li><span class="num">03</span><h3>Interview</h3><p>You run your own interview and coding test. You only pay for people you choose.</p></li>
+        <li><span class="num">04</span><h3>Onboard</h3><p>They get your accounts, join your channels and pick up their first ticket in week one.</p></li>
+        <li><span class="num">05</span><h3>Scale</h3><p>Add people when the roadmap grows, step down when it slows. Short notice, no penalty.</p></li>
+      </ol></div>
+    </div>
+  </section>
+
+  <div class="signal" aria-hidden="true"><canvas></canvas><span class="read"><i></i><b>Status · All systems up</b></span><span class="tag">Remote · US hours · Nationwide</span></div>
+
+  <section id="about" class="alt">
+    <div class="wrap about">
+      <div class="cube-stage" aria-hidden="true">
+        <div class="cube">
+          <div class="side"><i></i><b>Vetted first</b><span>Skills tested before you see a profile</span></div>
+          <div class="side"><i></i><b>Your hours</b><span>Overlap with your US workday</span></div>
+          <div class="side"><i></i><b>Your code</b><span>NDA signed, IP stays with you</span></div>
+          <div class="side"><i></i><b>Easy swap</b><span>Free replacement if it isn't a fit</span></div>
+          <div class="side"></div>
+          <div class="side"></div>
+        </div>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">Why Eagar 2 Work</span>
+        <h2>Engineers who want the work, and a company that stands behind them</h2>
+        <p>Hiring a good engineer in the US can take months and cost a fortune before they write a line of code. Freelance sites are faster, but you're on your own if someone disappears halfway through a sprint.</p>
+        <p><strong>We sit in the middle.</strong> Every engineer is screened before you meet them, signs an NDA, works the hours you need and is backed by us. If someone isn't working out, we replace them and help with the handover.</p>
+        <p>The name says how we work. Our people are eager to work, and it shows in the first week.</p>
+        <div class="owner"><span class="avatar" aria-hidden="true">HP</span><div><b>Hemang Ponda, owner</b><span>Talk to him directly about the role or project you need filled.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">Questions</span><h2>What people ask before they hire</h2></div>
+        <p class="lede">Straight answers about staff augmentation, remote developer costs, time zones and who owns the work.</p>
+      </div>
+      <div class="faq">
+        <details open><summary>What is IT staff augmentation?</summary><p>It means adding outside engineers to your own team for as long as you need them. They work inside your process and tools like any other team member, while we handle recruiting, contracts, payroll and equipment. You get the extra hands without opening a full time position.</p></details>
+        <details><summary>How much does it cost to hire a remote developer?</summary><p>It depends on the role, seniority and how many hours you need. A dedicated remote developer usually costs a fraction of a US salary once you add benefits, recruiting fees and equipment. Tell us the role and we'll send a monthly rate the same week.</p></details>
+        <details><summary>Will the developers work in my time zone?</summary><p>Yes. Every engineer overlaps with your US business day for daily standups, meetings and quick questions. Tell us whether you're on Eastern, Central, Mountain or Pacific time and we'll set schedules around it.</p></details>
+        <details><summary>Who owns the code and the work they produce?</summary><p>You do. Every engineer signs an NDA, and our contract assigns all code, designs and documents to your company. Work lives in your repositories and your accounts from day one.</p></details>
+        <details><summary>How fast can someone start?</summary><p>For common roles like React, Node.js, Python or QA, you'll usually see profiles within a few days and can have someone working within one to two weeks after you pick them.</p></details>
+        <details><summary>What if a developer isn't the right fit?</summary><p>Tell us and we'll replace them at no extra cost, and help with the handover so your project doesn't lose ground.</p></details>
+        <details><summary>Can I reduce the team later?</summary><p>Yes. Engagements run month to month after the first month. Give us short notice and we'll scale the team down without penalties.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="t"><span class="eyebrow">Contact</span><h2>Tell us what you need built or covered</h2></div>
+        <p class="lede">Call, or send a few details below. We'll reply with profiles or a plan, and an honest price.</p>
+      </div>
+      <div class="contact">
+        <div class="info">
+          <div class="line-card">
+            <span class="k">Call Hemang Ponda, owner</span>
+            <span class="phone" id="phone">+1 213 786 1340</span>
+            <div class="row"><button class="mini" type="button" id="copyPhone">Copy number</button><a class="mini" href="tel:+12137861340">Call</a></div>
+          </div>
+          <div class="line-card"><span class="k">Office</span><span class="v">800 W 6th St, Suite 1200<br>Los Angeles, CA 90017, United States</span></div>
+          <div class="line-card"><span class="k">Hours</span><span class="v">Monday to Friday, 8 AM to 6 PM Pacific<br>Support coverage across all US time zones</span></div>
+        </div>
+        <form id="form" novalidate>
+          <label>Your name<input id="f-name" name="name" required autocomplete="name"></label>
+          <label>Company<input id="f-company" name="company" autocomplete="organization"></label>
+          <label>Work email<input id="f-email" name="email" type="email" required autocomplete="email"></label>
+          <label>Phone<input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
+          <label class="full">What do you need?
+            <select id="f-need" name="need"><option>Hire a remote developer</option><option>A dedicated team</option><option>Remote help desk</option><option>Cloud &amp; DevOps</option><option>QA &amp; testing</option><option>Something else</option></select>
+          </label>
+          <label class="full">Tell us a little more<textarea id="f-msg" name="message" placeholder="The role or project, your tech stack, when you'd like someone to start..."></textarea></label>
+          <div class="full"><button class="btn btn-gold" type="submit">Send my request</button></div>
+          <p class="status" id="status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#top"><svg><use href="#mark"/></svg><b>Eagar<span><em>2</em> work</span></b></a>
+    <nav aria-label="Footer"><a href="#services">Remote IT services</a><a href="#augmentation">IT staff augmentation</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+    <span>© 2026 Eagar 2 Work · Los Angeles, California</span>
+  </div>
+</footer>
+
+<script>
+(() => {
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
+const MIST='#EEF3F1', GOLD='#F0A830', TEAL='#1FB5A8';
+const dpr = Math.min(devicePixelRatio||1,2);
+
+/* ---------- Hero flock ---------- */
+(function hero(){
+const cv=document.getElementById('flock'), ctx=cv.getContext('2d');
+const S=180;
+function sample(draw){
+  const c=document.createElement('canvas'); c.width=c.height=S;
+  const x=c.getContext('2d'); x.save(); x.scale(S/100,S/100); draw(x); x.restore();
+  const d=x.getImageData(0,0,S,S).data, pts=[];
+  for(let y=0;y<S;y+=2) for(let X=0;X<S;X+=2){const i=(y*S+X)*4; if(d[i+3]>150) pts.push([X/S,y/S,d[i],d[i+1],d[i+2]]);}
+  for(let i=pts.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[pts[i],pts[j]]=[pts[j],pts[i]];}
+  return pts;
+}
+function poly(x,p){x.beginPath();x.moveTo(p[0],p[1]);for(let i=2;i<p.length;i+=2)x.lineTo(p[i],p[i+1]);x.closePath();x.fill();}
+const shapes=[
+  x=>{ x.fillStyle=MIST; poly(x,[20,18,84,18,72,30,20,30]); poly(x,[20,70,72,70,84,82,20,82]); x.fillRect(20,18,12,64);
+       x.strokeStyle=GOLD; x.lineWidth=8; x.lineCap='round'; x.lineJoin='round';
+       x.beginPath(); [[32,50],[44,50],[51,37],[59,63],[65,50],[74,50]].forEach((p,i)=>i?x.lineTo(...p):x.moveTo(...p)); x.stroke();
+       x.fillStyle=TEAL; x.beginPath(); x.arc(83,50,5.5,0,7); x.fill(); },
+  x=>{ x.lineCap='round'; x.lineJoin='round'; x.lineWidth=8;
+       x.strokeStyle=MIST; x.beginPath(); x.moveTo(34,28); x.lineTo(14,50); x.lineTo(34,72); x.stroke();
+       x.beginPath(); x.moveTo(66,28); x.lineTo(86,50); x.lineTo(66,72); x.stroke();
+       x.strokeStyle=GOLD; x.beginPath(); x.moveTo(57,22); x.lineTo(43,78); x.stroke();
+       x.fillStyle=TEAL; x.beginPath(); x.arc(50,88,4.5,0,7); x.fill(); },
+  x=>{ x.fillStyle=MIST; [16,41,66].forEach(y=>{ x.beginPath(); x.roundRect?x.roundRect(18,y,64,19,5):x.rect(18,y,64,19); x.fill(); });
+       x.globalCompositeOperation='destination-out'; [16,41,66].forEach(y=>x.fillRect(48,y+7.5,26,4)); x.globalCompositeOperation='source-over';
+       [16,41,66].forEach((y,i)=>{ x.fillStyle=TEAL; x.beginPath(); x.arc(28,y+9.5,3.4,0,7); x.fill(); x.fillStyle=i===1?GOLD:TEAL; x.beginPath(); x.arc(37,y+9.5,3.4,0,7); x.fill(); }); }
+];
+const names=['Eagar 2 Work','Dev','IT'];
+const forms=shapes.map(sample);
+let W=0,H=0,cdpr=1,N=0,P=[],cur=0,scattered=false;
+function size(){ const r=cv.getBoundingClientRect(); cdpr=Math.min(devicePixelRatio||1,2); W=r.width; H=r.height; cv.width=W*cdpr; cv.height=H*cdpr; ctx.setTransform(cdpr,0,0,cdpr,0,0); }
+function init(){
+  size(); N=W<420?760:1250; P=[];
+  for(let i=0;i<N;i++){ const a=Math.random()*Math.PI*2;
+    P.push({x:-40-Math.random()*W*.6,y:H*.2+Math.random()*H*.6,vx:4+Math.random()*4,vy:Math.sin(a)*2,k:.012+Math.random()*.02,ph:Math.random()*6.28,r:238,g:243,b:241,s:Math.random()<.15?2.4:1.7}); }
+  if(reduce){ const f=forms[0]; P.forEach((p,i)=>{const t=f[i%f.length]; p.x=W*.07+t[0]*W*.86; p.y=W*.07+t[1]*W*.86; p.r=t[2];p.g=t[3];p.b=t[4];}); draw(0); }
+}
+let mx=null,my=null;
+cv.addEventListener('pointermove',e=>{const r=cv.getBoundingClientRect(); mx=e.clientX-r.left; my=e.clientY-r.top;});
+cv.addEventListener('pointerleave',()=>{mx=my=null});
+function swirl(){ P.forEach(p=>{ p.vx+=-(p.y-H/2)*.05+(Math.random()-.5)*3; p.vy+=(p.x-W/2)*.05+(Math.random()-.5)*3; }); }
+const hudName=document.getElementById('hudName'), hudPct=document.getElementById('hudPct');
+const btns=[...document.querySelectorAll('.forms button')];
+let pauseUntil=0, nextSwitch=6000, visible=true;
+function setForm(f,user){
+  btns.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.f===String(f))));
+  if(f==='scatter'){ scattered=true; hudName.textContent='Free flight'; P.forEach(p=>{p.vx+=(Math.random()-.5)*16;p.vy+=(Math.random()-.5)*16;}); }
+  else { scattered=false; cur=f; hudName.textContent=names[f]; swirl(); }
+  if(user) pauseUntil=performance.now()+14000;
+  if(reduce){ if(!scattered){const fm=forms[cur]; P.forEach((p,i)=>{const t=fm[i%fm.length]; p.x=W*.07+t[0]*W*.86;p.y=W*.07+t[1]*W*.86;p.r=t[2];p.g=t[3];p.b=t[4];});} else P.forEach(p=>{p.x=Math.random()*W;p.y=Math.random()*H}); draw(0); }
+}
+btns.forEach(b=>b.addEventListener('click',()=>setForm(b.dataset.f==='scatter'?'scatter':+b.dataset.f,true)));
+function draw(t){
+  ctx.clearRect(0,0,W,H);
+  const pad=W*.07, span=W-pad*2, fm=forms[cur]; let locked=0;
+  for(let i=0;i<N;i++){ const p=P[i];
+    if(!reduce){
+      if(scattered){
+        p.vx+=Math.cos(t*.0007+p.ph+p.y*.01)*.25; p.vy+=Math.sin(t*.0009+p.ph+p.x*.01)*.25;
+        if(p.x<0)p.vx+=.6; if(p.x>W)p.vx-=.6; if(p.y<0)p.vy+=.6; if(p.y>H)p.vy-=.6;
+        p.vx*=.95; p.vy*=.95; p.r+=(238-p.r)*.03; p.g+=(243-p.g)*.03; p.b+=(241-p.b)*.03;
+      } else {
+        const tg=fm[i%fm.length];
+        const tx=pad+tg[0]*span+Math.sin(t*.0013+p.ph)*.9, ty=pad+tg[1]*span+Math.cos(t*.0011+p.ph)*.9;
+        const dx=tx-p.x, dy=ty-p.y;
+        p.vx=(p.vx+dx*p.k)*.86; p.vy=(p.vy+dy*p.k)*.86;
+        if(dx*dx+dy*dy<9) locked++;
+        p.r+=(tg[2]-p.r)*.05; p.g+=(tg[3]-p.g)*.05; p.b+=(tg[4]-p.b)*.05;
+      }
+      if(mx!==null){ const ex=p.x-mx, ey=p.y-my, d2=ex*ex+ey*ey; if(d2<4900){ const d=Math.sqrt(d2)||1, f=(1-d/70)*3.2; p.vx+=ex/d*f; p.vy+=ey/d*f; } }
+      p.x+=p.vx; p.y+=p.vy;
+    }
+    ctx.fillStyle=`rgb(${p.r|0},${p.g|0},${p.b|0})`; ctx.fillRect(p.x,p.y,p.s,p.s);
+  }
+  if(!reduce) hudPct.textContent=scattered?'SEARCHING':'LOCK '+Math.round(locked/N*100)+'%';
+}
+function loop(t){
+  if(visible&&!document.hidden){ if(!scattered&&t>nextSwitch&&t>pauseUntil){ setForm((cur+1)%3,false); nextSwitch=t+6500; } draw(t); }
+  requestAnimationFrame(loop);
+}
+init();
+new ResizeObserver(()=>{ const oW=W,oH=H; size(); if(oW&&oH) P.forEach(p=>{p.x*=W/oW;p.y*=H/oH}); if(reduce) setForm(cur,false); }).observe(cv);
+new IntersectionObserver(es=>{visible=es[0].isIntersecting}).observe(cv);
+if(!reduce) requestAnimationFrame(loop);
+})();
+
+/* ---------- Signal bands ---------- */
+const bands=[...document.querySelectorAll('.signal')].map(el=>({el,cv:el.querySelector('canvas'),read:el.querySelector('.read'),label:el.querySelector('.read b')}));
+let lastY=scrollY, energy=0, busy=null;
+function sizeBands(){ bands.forEach(b=>{const r=b.cv.getBoundingClientRect(); b.w=r.width; b.h=r.height; b.cv.width=r.width*dpr; b.cv.height=r.height*dpr; b.c=b.cv.getContext('2d'); b.c.setTransform(dpr,0,0,dpr,0,0);}); }
+sizeBands(); addEventListener('resize',sizeBands);
+function wave(t){
+  const dy=Math.abs(scrollY-lastY); lastY=scrollY; energy=energy*.9+dy*.12;
+  const amp=7+Math.min(energy,70)*.55, isBusy=energy>3;
+  bands.forEach(b=>{
+    if(isBusy!==busy){ b.read.classList.toggle('busy',isBusy); b.label.textContent='Status · '+(isBusy?'Deploying':'All systems up'); }
+    const c=b.c, w=b.w, h=b.h, mid=h/2+6;
+    c.clearRect(0,0,w,h);
+    c.strokeStyle='rgba(238,243,241,.10)'; c.lineWidth=1; c.beginPath(); c.moveTo(0,mid); c.lineTo(w,mid); c.stroke();
+    const y=(x,k,s)=>mid+Math.sin(x*.018*k+t*.003*s)*amp*Math.sin(Math.PI*x/w)+Math.sin(x*.047-t*.005)*amp*.3;
+    c.strokeStyle='rgba(31,181,168,.55)'; c.lineWidth=1.5; c.beginPath(); for(let x=0;x<=w;x+=4){ const v=y(x,.7,-1)+4; x?c.lineTo(x,v):c.moveTo(x,v);} c.stroke();
+    c.strokeStyle=GOLD; c.lineWidth=2.4; c.beginPath(); for(let x=0;x<=w;x+=3){ const v=y(x,1,1); x?c.lineTo(x,v):c.moveTo(x,v);} c.stroke();
+    const bx=(t*.18)%w; c.fillStyle=GOLD; c.shadowColor=GOLD; c.shadowBlur=14; c.beginPath(); c.arc(bx,y(bx,1,1),4.5,0,7); c.fill(); c.shadowBlur=0;
+  });
+  busy=isBusy;
+  if(!reduce) requestAnimationFrame(wave);
+}
+if(reduce) wave(0); else requestAnimationFrame(wave);
+
+/* ---------- Scroll tilt (3D settle) ---------- */
+const tilts=[...document.querySelectorAll('[data-tilt]')];
+function tiltLoop(){
+  const vh=innerHeight;
+  tilts.forEach(el=>{ const r=el.getBoundingClientRect(); const p=Math.max(0,Math.min(1,(vh-r.top)/(vh*.75))); el.style.transform=`perspective(1600px) rotateX(${((1-p)*16).toFixed(2)}deg) translateY(${((1-p)*30).toFixed(1)}px)`; });
+  requestAnimationFrame(tiltLoop);
+}
+if(!reduce) requestAnimationFrame(tiltLoop);
+
+/* ---------- Card hover tilt ---------- */
+if(fine && !reduce) document.querySelectorAll('.card').forEach(c=>{
+  c.addEventListener('pointermove',e=>{ const r=c.getBoundingClientRect(), px=(e.clientX-r.left)/r.width, py=(e.clientY-r.top)/r.height;
+    c.style.transition='transform .1s, border-color .3s';
+    c.style.transform=`rotateX(${(.5-py)*14}deg) rotateY(${(px-.5)*16}deg) translateZ(10px)`; c.style.setProperty('--gx',px*100+'%'); c.style.setProperty('--gy',py*100+'%'); });
+  c.addEventListener('pointerleave',()=>{ c.style.transition=''; c.style.transform=''; });
+});
+
+/* ---------- Role carousel ---------- */
+const ROLES=[
+  ['React developer','Frontend','Re',['React','Next.js','TypeScript'],'Builds the screens your customers click on, from dashboards to checkout flows, and keeps them fast on every device.',['Customer portals and admin dashboards','Turning Figma designs into working pages','Speeding up slow pages']],
+  ['Node.js developer','Backend','No',['Node.js','Express','PostgreSQL'],'Writes the APIs and services behind your app and connects it to payments, email and the other tools you use.',['REST and GraphQL APIs','Stripe, Twilio and CRM integrations','Background jobs and queues']],
+  ['Python developer','Backend','Py',['Python','Django','FastAPI'],'Handles backend logic, data heavy features and automation scripts that save your team hours every week.',['Web backends and admin tools','Data processing and reports','Automating manual workflows']],
+  ['Full stack developer','Web','Fs',['MERN','Laravel','.NET'],'Comfortable on both sides of the app, which makes them a good first hire for startups and small product teams.',['MVPs and new features end to end','Maintaining older apps','Small fixes across the stack']],
+  ['Mobile developer','Apps','Mo',['Flutter','React Native','Swift'],'Ships iOS and Android apps from one codebase, and handles the app store submissions you don\'t want to.',['New apps and redesigns','Push notifications and payments','App store releases']],
+  ['DevOps engineer','Cloud','Ops',['AWS','Kubernetes','Terraform'],'Sets up the servers, pipelines and monitoring so your developers can ship without fear and your cloud bill stays sane.',['CI/CD pipelines','AWS and Azure setup','Cost and uptime reviews']],
+  ['QA automation engineer','Testing','QA',['Playwright','Cypress','Selenium'],'Finds the bugs before your customers do, and writes the automated tests that keep finding them on every release.',['Regression test suites','Manual testing before releases','Bug reports developers can act on']],
+  ['Data engineer','Data','Da',['Snowflake','dbt','Airflow'],'Moves data from your apps into a warehouse you can trust, so reports match and dashboards stop arguing with each other.',['Data pipelines','Warehouse setup and cleanup','Power BI and Looker reports']],
+  ['AI / ML engineer','AI','AI',['Python','OpenAI API','LangChain'],'Adds practical AI to your product, like smarter search, document reading and support assistants trained on your own content.',['Chat and search features','Document and data extraction','Model evaluation and cost control']],
+  ['UI/UX designer','Design','Ux',['Figma','Design systems','Prototyping'],'Turns rough ideas into clear screens and click through prototypes your developers can build from without guessing.',['Wireframes and prototypes','Design systems','Usability fixes on live products']]
+];
+const ring=document.getElementById('ring'), stage=document.getElementById('ringStage');
+const rName=document.getElementById('rName'), rText=document.getElementById('rText'), rList=document.getElementById('rList');
+const RN=ROLES.length, step=360/RN;
+let rot=0, rTarget=null, rDrag=false, rx0=0, moved=false, hoverRing=false, front=-1, Rz=0;
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const rcards=ROLES.map((r,i)=>{ const b=document.createElement('button'); b.type='button'; b.className='role';
+  b.innerHTML=`<span class="glyph">${esc(r[2])}</span><div style="display:grid;gap:8px"><span class="k">${esc(r[1])}</span><h3>${esc(r[0])}</h3></div><span class="tags">${r[3].map(s=>`<i>${esc(s)}</i>`).join('')}</span>`;
+  b.addEventListener('click',()=>{ if(!moved) goTo(i); });
+  ring.appendChild(b); return b; });
+function layout(){ const w=rcards[0].offsetWidth; Rz=Math.round(w/2/Math.tan(Math.PI/RN))+26; rcards.forEach((c,i)=>c.style.transform=`rotateY(${i*step}deg) translateZ(${Rz}px)`); paint(); }
+function goTo(i){ const base=-i*step, k=Math.round((rot-base)/360); rTarget=base+360*k; if(reduce){ rot=rTarget; rTarget=null; paint(); } }
+function showRole(i){ const r=ROLES[i]; rName.textContent=r[0]; rText.textContent=r[4]; rList.innerHTML=r[5].map(s=>`<li>${esc(s)}</li>`).join(''); }
+function paint(){
+  ring.style.transform=`translateZ(${-Rz}px) rotateY(${rot}deg)`;
+  let best=0, bd=999;
+  rcards.forEach((c,i)=>{ const a=((i*step+rot)%360+540)%360-180, f=Math.cos(a*Math.PI/180);
+    c.style.opacity=(.14+.86*Math.pow(Math.max(0,f),1.6)).toFixed(3); c.style.pointerEvents=f>0?'auto':'none'; c.tabIndex=f>.5?0:-1;
+    if(Math.abs(a)<bd){bd=Math.abs(a);best=i;} });
+  if(best!==front){ if(front>=0) rcards[front].classList.remove('front'); front=best; rcards[best].classList.add('front'); showRole(best); }
+}
+function ringLoop(){
+  if(!rDrag){ if(rTarget!==null){ rot+=(rTarget-rot)*.09; if(Math.abs(rTarget-rot)<.05){rot=rTarget;rTarget=null;} } else if(!hoverRing) rot-=.11; }
+  paint(); requestAnimationFrame(ringLoop);
+}
+stage.addEventListener('pointerenter',()=>hoverRing=true);
+stage.addEventListener('pointerleave',()=>{hoverRing=false});
+stage.addEventListener('pointerdown',e=>{ rDrag=true; moved=false; rx0=e.clientX; rTarget=null; });
+addEventListener('pointermove',e=>{ if(!rDrag) return; const dx=e.clientX-rx0; if(Math.abs(dx)>3) moved=true; rx0=e.clientX; rot+=dx*.28; if(reduce) paint(); });
+addEventListener('pointerup',()=>{ if(!rDrag) return; rDrag=false; if(moved){ rTarget=Math.round(rot/step)*step; if(reduce){rot=rTarget;rTarget=null;paint();} } });
+document.getElementById('prev').addEventListener('click',()=>goTo((front-1+RN)%RN));
+document.getElementById('next').addEventListener('click',()=>goTo((front+1)%RN));
+layout(); addEventListener('resize',layout);
+if(!reduce) requestAnimationFrame(ringLoop);
+
+/* ---------- Flip cards ---------- */
+document.querySelectorAll('.flip').forEach(f=>{
+  const tog=()=>{ const on=f.classList.toggle('on'); f.setAttribute('aria-pressed',String(on)); };
+  f.addEventListener('click',tog);
+  f.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); tog(); } });
+});
+
+/* ---------- Contact ---------- */
+const copyBtn=document.getElementById('copyPhone');
+copyBtn.addEventListener('click',()=>{
+  const ok=()=>{copyBtn.textContent='Copied';setTimeout(()=>copyBtn.textContent='Copy number',1600)};
+  const fail=()=>{const r=document.createRange(); r.selectNodeContents(document.getElementById('phone')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); copyBtn.textContent='Selected, press copy';};
+  try{navigator.clipboard.writeText('+1 213 786 1340').then(ok,fail)}catch(e){fail()}
+});
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const st=document.getElementById('status'), n=document.getElementById('f-name'), m=document.getElementById('f-email');
+  if(!n.value.trim()){ st.textContent='Please add your name so we know who to reply to.'; n.focus(); return; }
+  if(!/^\S+@\S+\.\S+$/.test(m.value)){ st.textContent='That email address looks incomplete. Please check it.'; m.focus(); return; }
+  st.textContent='Preview only: this form isn\'t connected to an inbox yet, so nothing was sent. Please call +1 213 786 1340.';
+});
+})();
+</script>
+
+</body></html>
